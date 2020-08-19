@@ -23,13 +23,13 @@ $body_type = 'text';
 $html='';
     
     // First, instantiate the SDK with your API credentials
-$mgClient = Mailgun::create('07e45e2a-09b9462d'); // For US servers
+$mgClient = Mailgun::create('API-Key'); // For US servers
 //$mgClient = Mailgun::create('07e45e2a-09b9462d', 'https://api.eu.mailgun.net'); // For EU servers
-$domain = "mailgun@sandbox29d84896642444e1a50362b0efb15ebd.mailgun.org";
+$domain = "mailgun@<domain>";
 // Now, compose and send your message.
 // $mg->messages()->send($domain, $params);
 $params  = array(
-     'from'    => "$sender <mailgun@sandbox29d84896642444e1a50362b0efb15ebd.mailgun.org",
+     'from'    => "$sender <mailgun@<>",
      'to'      => $recipient,
      'subject' => $subject,
      'text'    => $message

@@ -13,11 +13,11 @@ if($this->form_validation->run()){
 $cellphone=$this->input->post('cellphone');
 $message=$this->input->post('message');	
     //twilio
-     $sid = 'AC7261b3edfb6ecee28664d00c3de57f5d';
-    $token = '380a656c0da5e983580e1d1282e56d9f';
+     $sid = '<sid>';
+    $token = '<token>';
     
 // A Twilio number you own with SMS capabilities
- $twilio_number = "+12512500783";
+ $twilio_number = "+twilio_number";
 
 $client = new Client($sid, $token);
 $msg = $client->messages->create(
