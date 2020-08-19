@@ -29,7 +29,7 @@
           </ol>
 
           <!-- Page Content -->
-          <h1>Twilio SMS and CRUD</h1>
+          <h1>Twilio SMS and Mailgun Email with CRUD</h1>
           <hr>
 <div class="row">
 <div class="col-xl-3 col-sm-6 mb-3">
